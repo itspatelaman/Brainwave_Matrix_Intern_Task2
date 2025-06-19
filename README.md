@@ -18,6 +18,28 @@ A professional-grade password strength checker built using Python and Tkinter. T
 - ✅ Dark-themed GUI with modern fonts and coloring
 
 ---
+## 📄 Note: Common Password List Not Included
+
+### ⚠️ Important :
+This project uses a large common_passwords.txt file to check whether a password appears in leaked/common password databases.
+
+To keep the repository lightweight and avoid GitHub push issues, this file is not included in the repo.
+
+✅ What You Should Do:
+After cloning this repository locally, please do one of the following:
+
+**Option 1** : Use SecLists (Recommended)
+Download a trusted common password list from SecLists:
+```
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Common-Credentials/10-million-password-list-top-100000.txt -O common_passwords.txt
+```
+
+**Option 2** : Use Your Own
+Place your own common_passwords.txt file in the project root directory. Each password should be on a new line.
+
+
+#### ℹ️ Why This Matters:
+The password checker will only mark passwords as "weak" due to being common if this file exists in the same folder. Without it, the common password check is skipped.
 
 ## 📸 Demo Preview
 
